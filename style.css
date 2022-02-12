@@ -1,7 +1,6 @@
 :root {
   --bg-color: #fff;
   --hover-btn: #F1B90C;
-  --
 }
 * {
   padding: 0;
@@ -30,6 +29,9 @@ nav button {
   padding: 10px;
   border: none;
   border-radius: 5px;
+}
+nav div:last-child button:last-child {
+		display: none;
 }
 main {
   display: grid;
@@ -81,4 +83,16 @@ section.dashboard > div:hover::before {
   top: 0%;
   right: 50%;
   transform: translate(50%,-100%);
+}
+
+
+@media(min-width: 1024px){
+		nav div:last-child button:last-child {
+		display: inline-block;
+		margin: auto 10px;
+ }
+ main {
+ 		width: 300px;
+  margin: auto;
+ }
 }
